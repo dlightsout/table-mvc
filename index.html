@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>table</title>
+  <style>
+    table, th,td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 8px;
+      text-align: center
+    }
+
+    th {
+            background-color: #f2f2f2;
+    }
+
+    #AddRowForm {
+      margin-top:96px;
+    }
+
+  </style>
+</head>
+<body>
+  <table >
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+        <th>Height</th>
+        <th>Action</th>
+      </tr >
+    </thead>
+    <tbody id="dataTable">
+
+    </tbody>
+  </table>
+  <form id="AddRowForm">
+    <input type="text" id="first_name" name="first_name" placeholder="First Name"/>
+    <input type="text" name="last_name" placeholder="Last Name"/>
+    <input type="nubmer" name="age" placeholder="Age"/>
+    <input type="nubmer" name="height" placeholder="Height"/>
+    <button type="submit">Add row</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
